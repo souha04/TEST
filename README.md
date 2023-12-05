@@ -29,5 +29,3 @@ Ce projet est sous licence [Nom de la licence]. Voir le fichier LICENSE.md pour 
 
 ## Auteurs
 
-- [Votre Nom]
-- [Autre Contributeur]
