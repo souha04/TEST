@@ -40,7 +40,7 @@
             max-width:100%;
             height: auto;
 		    margin-left: 625px;
-			margin-top: 20px;
+			margin-top: 0px;
 			border-radius:5px; /* bordure rond du cotés*/
         }
     </style>
@@ -48,12 +48,11 @@
 <body>
     <header>
         <!-- Ajoute une image dans l'en-tête -->
-        <img src="C:\Users\l256821\Desktop\html\logo.jpg" alt="logo">
- 
+        <img src="logo.jpg" alt="logo">
     </header>
 
     <form action="/traiter_reservation" method="post">
-        <label for="Référence plan">Référence plan :</label>
+        <label for="Référence_plan">Référence plan :</label>
         <input type="text" id="Référence plan" name="Référence plan" required>
 
         <label for="Quantité">Quantité :</label>
@@ -65,8 +64,8 @@
         <label for="date">Date de réservation :</label>
         <input type="date" id="date" name="date" required disabled>
 
-        <label for="Heure de réservation">Heure de réservation :</label>
-        <input type="time" id="Heure de réservation" name="Heure de réservation" required>
+        <label for="Heure_de_réservation">Heure de réservation :</label>
+        <input type="time" id="Heure_de_réservation" name="Heure de réservation" required>
 
         <label for="message">Notification (urgence, etc.) :</label>
         <textarea id="message" name="message" rows="4"></textarea>
@@ -82,9 +81,8 @@
             
             // Ajoute un zéro devant les minutes si nécessaire
             minutes = minutes < 10 ? '0' + minutes : minutes;
-		document.getElementById('heure').value = heures + ':' + minutes;
+		document.getElementById('Heure_de_réservation').value = heures + ':' + minutes;
 
     </script>
 </body>
 </html>
-Footer
